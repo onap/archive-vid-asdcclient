@@ -11,7 +11,33 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<nexus.host>ecomp-nexus</nexus.host>
+		<nexus.port>8443</nexus.port>
+		<nexus.proto>https</nexus.proto>
+		<build.version>1.0.0</build.version>
 	</properties>
+
+	<repositories>
+	  <repository>
+	    <!-- Snapshots repository has ECOMP snapshot artifacts -->
+	    <id>nexus-snapshots</id>
+	    <name>Nexus Maven Central - Snapshots</name>
+	    <url>${nexus.proto}://${nexus.host}:${nexus.port}/repository/maven-snapshots/</url>
+	    </repository>
+	  <repository>
+	    <!-- Releases repository has ECOMP release artifacts -->
+	    <id>nexus</id>
+	    <name>Nexus Maven Central - Releases</name>
+	    <url>${nexus.proto}://${nexus.host}:${nexus.port}/repository/maven-releases/</url>
+	    </repository>
+	  <repository>
+	    <!-- Snapshots repository has ECOMP snapshot artifacts -->
+	    <id>oss-snapshots</id>
+	    <name>oss Central - Snapshots</name>
+	    <url>https://oss.sonatype.org/service/local/repositories/releases/content/</url>
+	    </repository>
+	  </repositories>
+
 
 	<dependencies>
 		<dependency>
