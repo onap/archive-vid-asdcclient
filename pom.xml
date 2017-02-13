@@ -20,13 +20,13 @@
 			<!-- Snapshots repository has ECOMP snapshot artifacts -->
 			<id>nexus-snapshots</id>
 			<name>Nexus Maven Central - Snapshots</name>
-			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-snapshots/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/snapshots/</url>
 		</repository>
 		<repository>
 			<!-- Releases repository has ECOMP release artifacts -->
 			<id>nexus</id>
 			<name>Nexus Maven Central - Releases</name>
-			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-releases/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/releases/</url>
 		</repository>
 		<repository>
 			<!-- Snapshots repository has ECOMP snapshot artifacts -->
@@ -74,12 +74,12 @@
 		<repository>
 			<id>vid-releases</id>
 			<name>VID Release Repository</name>
-			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-releases/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>vid-snapshots</id>
 			<name>VID Snapshot Repository</name>
-			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-snapshots/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/snapshots/</url>
 		</snapshotRepository>
 		<!-- added for javadoc -->
 		<site>
