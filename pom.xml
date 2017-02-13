@@ -75,12 +75,12 @@
 		<repository>
 			<id>vid-releases</id>
 			<name>VID Release Repository</name>
-			<url>${nexus.proto}://${nexus.host}:${nexus.port}/repository/maven-releases/</url>
+			<url>${nexus.proto}://${nexus.host}/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>vid-snapshots</id>
 			<name>VID Snapshot Repository</name>
-			<url>${nexus.proto}://${nexus.host}:${nexus.port}/repository/maven-snapshots/</url>
+			<url>${nexus.proto}://${nexus.host}/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<!-- added for javadoc -->
 		<site>
