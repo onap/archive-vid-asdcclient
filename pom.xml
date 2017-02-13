@@ -12,7 +12,6 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<nexus.host>nexus.openecomp.org</nexus.host>
-		<nexus.port>443</nexus.port>
 		<nexus.proto>https</nexus.proto>
 		<build.version>1.0.2-SNAPSHOT</build.version>
 	</properties>
@@ -21,13 +20,13 @@
 			<!-- Snapshots repository has ECOMP snapshot artifacts -->
 			<id>nexus-snapshots</id>
 			<name>Nexus Maven Central - Snapshots</name>
-			<url>${nexus.proto}://${nexus.host}:${nexus.port}/repository/maven-snapshots/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-snapshots/</url>
 		</repository>
 		<repository>
 			<!-- Releases repository has ECOMP release artifacts -->
 			<id>nexus</id>
 			<name>Nexus Maven Central - Releases</name>
-			<url>${nexus.proto}://${nexus.host}:${nexus.port}/repository/maven-releases/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-releases/</url>
 		</repository>
 		<repository>
 			<!-- Snapshots repository has ECOMP snapshot artifacts -->
@@ -75,17 +74,17 @@
 		<repository>
 			<id>vid-releases</id>
 			<name>VID Release Repository</name>
-			<url>${nexus.proto}://${nexus.host}/repository/maven-releases/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>vid-snapshots</id>
 			<name>VID Snapshot Repository</name>
-			<url>${nexus.proto}://${nexus.host}/repository/maven-snapshots/</url>
+			<url>${nexus.proto}://${nexus.host}/content/repositories/maven-snapshots/</url>
 		</snapshotRepository>
 		<!-- added for javadoc -->
 		<site>
 			<id>vid-javadoc</id>
-			<url>dav:${nexus.proto}://${nexus.host}:${nexus.port}/repository/vid-javadoc/${project.version}</url>
+			<url>dav:${nexus.proto}://${nexus.host}/content/repositories/vid-javadoc/${project.version}</url>
 		</site>
 	</distributionManagement>
 
