@@ -72,18 +72,18 @@
 
 	<distributionManagement>
 		<repository>
-			<id>vid-releases</id>
+			<id>ecomp-releases</id>
 			<name>VID Release Repository</name>
 			<url>${nexus.proto}://${nexus.host}/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>vid-snapshots</id>
+			<id>ecomp-snapshots</id>
 			<name>VID Snapshot Repository</name>
 			<url>${nexus.proto}://${nexus.host}/content/repositories/snapshots/</url>
 		</snapshotRepository>
 		<!-- added for javadoc -->
 		<site>
-			<id>vid-javadoc</id>
+			<id>ecomp-javadoc</id>
 			<url>dav:${nexus.proto}://${nexus.host}/content/repositories/vid-javadoc/${project.version}</url>
 		</site>
 	</distributionManagement>
